@@ -58,3 +58,27 @@ Given an integer array `nums` of `2n` integers, group these integers into `n` pa
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've defined a function called `arrayPairSum` that takes an array of numbers, `nums`, as input. The purpose of this function is to calculate the sum of the minimum of each pair of numbers in the array and return the total sum.
+<br/>
+
+Inside the function, a variable called `result` is initialized to 0. This variable will store the sum of the minimum of each pair.
+<br/>
+
+The input array `nums` is sorted in ascending order using the `sort` method and a compare function. This ensures that the smaller numbers come before the larger numbers in the array.
+<br/>
+
+A `for` loop is used to iterate over the sorted `nums` array. The loop runs from `i = 0` to `i < nums.length` with an increment of `2` in each iteration. This ensures that we only consider every second number in the array, which represents the minimum of each pair.
+<br/>
+
+Within the loop, the current number `nums[i]` (which represents the minimum of the pair) is added to the `result` variable.
+<br/>
+
+After the loop finishes, the final value of `result`, which represents the sum of the minimum of each pair in the array, is returned as the output of the function.
+<br/>
+
+In summary, this function calculates the sum of the minimum of each pair of numbers in the input array. It achieves this by sorting the array and then iterating over it, adding the minimum of each pair to a running total. The final total is returned as the output of the function.
+<br/>
+<br/>
