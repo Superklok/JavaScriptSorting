@@ -1,46 +1,54 @@
 # JavaScript Valid Anagram
+<br/>
 
-## Challenge:
-
+## Challenge
 Given two strings `s` and `t`, return true if `t` is an anagram of `s`, and `false` otherwise.
 
 An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-
-### 1<sup>st</sup> Example:
-
-`Input: s = "anagram", t = "nagaram"`
-<br/>
-`Output: true`
-
-### 2<sup>nd</sup> Example:
-
-`Input: s = "rat", t = "car"`
-<br/>
-`Output: false`
-
-### Constraints:
-
-`1 <= s.length, t.length <= 5 * 10⁴`
-<br/>
-`s` and `t` consist of lowercase English letters.
-
-## Solution:
-
-`const isAnagram = (s, t) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`s = s.split("").sort().join();`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`t = t.split("").sort().join();`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return s === t;`
-<br/>
-`};`
 <br/>
 <br/>
 
-## Explanation:
+### 1<sup>st</sup> Example
+
+```JavaScript
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+### 2<sup>nd</sup> Example
+
+```JavaScript
+Input: s = "rat", t = "car"
+Output: false
+```
+
+<br/>
+
+### Constraints
+
+```JavaScript
+1 <= s.length, t.length <= 5 * 10⁴
+```
+
+- `s` and `t` consist of lowercase English letters.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const isAnagram = (s, t) => {
+    s = s.split("").sort().join();
+
+    t = t.split("").sort().join();
+
+    return s === t;
+};
+```
+
+<br/>
+
+## Explanation
 
 I've created a function called `isAnagram` that takes in two strings, `s` and `t`, as parameters. The purpose of this function is to check if the two strings are anagrams of each other.
 <br/>
