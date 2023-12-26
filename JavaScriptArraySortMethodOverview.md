@@ -371,7 +371,7 @@ Output: ['Nile', 'Congo', 'Amazon', 'Rio-Grande', 'Mississippi']
 ### :previous_track_button: [Previous (Flipping an Image)][Previous]
 <br/>
 
-### :play_or_pause_button: [More Sorting Challenges][More]
+### :play_or_pause_button: [Sorting Challenges][Challenges]
 <br/>
 
 ### :eject_button: [Return to Course Outline][Return]
@@ -379,5 +379,5 @@ Output: ['Nile', 'Congo', 'Amazon', 'Rio-Grande', 'Mississippi']
 
 [Next]: https://github.com/Superklok/JavaScriptSorting/blob/main/JavaScriptMergeIntervals.md
 [Previous]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptFlippingAnImage.md
-[More]: https://github.com/Superklok/JavaScriptSorting
+[Challenges]: https://github.com/Superklok/JavaScriptSorting
 [Return]: https://github.com/Superklok/LearnJavaScript
