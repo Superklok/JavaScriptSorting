@@ -31,10 +31,7 @@ Explanation: The substring with start index = 0 is 'ab', which is an anagram of 
 
 ### Constraints
 
-```JavaScript
-1 <= s.length, p.length <= 3 * 10⁴
-```
-
+- `1 <= s.length, p.length <= 3 * 10⁴`
 - `s` and `p` consist of lowercase English letters.
 
 <br/>
@@ -104,3 +101,22 @@ If the size of the sliding window (determined by `right - left`) becomes equal t
 Finally, this function returns the `output` array containing the indices where the anagrams start in `s`.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Sort List)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Array Partition)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Sorting Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptDivideAndConquer/blob/main/JavaScriptSortList.md
+[Previous]: https://github.com/Superklok/JavaScriptSorting/blob/main/JavaScriptArrayPartition.md
+[More]: https://github.com/Superklok/JavaScriptSorting
+[Return]: https://github.com/Superklok/LearnJavaScript

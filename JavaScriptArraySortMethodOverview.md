@@ -15,7 +15,7 @@ Output: [0, 1, 10, 2, 20, 3, 30]
 
 <br/>
 
-As we can observe in this example, the `sort()` method reorders `10` before `2` because the string `"10"` is ordered before `"2"` when comparing the two strings against each other. To remedy this default behavior, a `compare()` function must be passed to the `sort()` method so that it can determine the correct order of elements. 
+As we can observe in this example, the `sort()` method reorders `10` before `2` because the string `'10'` is ordered before `'2'` when comparing the two strings against each other. To remedy this default behavior, a `compare()` function must be passed to the `sort()` method so that it can determine the correct order of elements. 
 <br/>
 <br/>
 
@@ -210,9 +210,9 @@ Output: [80, 70, 20, 10, 9, 5]
 ```JavaScript
 Ex.
 let employees = [
-    {name: 'Josie', salary: 90000, hireDate: "August 27, 2023"},
-    {name: 'Olivia', salary: 75000, hireDate: "December 13, 2022"},
-    {name: 'Britney', salary: 80000, hireDate: "January 1, 2024"},
+    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
+    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
+    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
 ];
 ```
 
@@ -235,9 +235,9 @@ Input: employees.sort((x, y) => {
 });
 console.table(employees);
 Output: [
-    {name: 'Olivia', salary: 75000, hireDate: "December 13, 2022"},
-    {name: 'Britney', salary: 80000, hireDate: "January 1, 2024"},
-    {name: 'Josie', salary: 90000, hireDate: "August 27, 2023"},
+    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
+    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
+    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
 ];
 ```
 
@@ -262,9 +262,9 @@ Input: employees.sort((x, y) => {
 });
 console.table(employees);
 Output: [
-    {name: 'Britney', salary: 80000, hireDate: "January 1, 2024"},
-    {name: 'Olivia', salary: 75000, hireDate: "December 13, 2022"},
-    {name: 'Josie', salary: 90000, hireDate: "August 27, 2023"},
+    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
+    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
+    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
 ];
 ```
 
@@ -285,9 +285,9 @@ Input: employees.sort((x, y) => {
 });
 console.table(employees);
 Output: [
-    {name: 'Olivia', salary: 75000, hireDate: "December 13, 2022"},
-    {name: 'Josie', salary: 90000, hireDate: "August 27, 2023"},
-    {name: 'Britney', salary: 80000, hireDate: "January 1, 2024"},
+    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
+    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
+    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
 ];
 ```
 
@@ -362,3 +362,22 @@ Output: ['Nile', 'Congo', 'Amazon', 'Rio-Grande', 'Mississippi']
 
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Merge Intervals)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Flipping an Image)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Sorting Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptSorting/blob/main/JavaScriptMergeIntervals.md
+[Previous]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptFlippingAnImage.md
+[More]: https://github.com/Superklok/JavaScriptSorting
+[Return]: https://github.com/Superklok/LearnJavaScript
