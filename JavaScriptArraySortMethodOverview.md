@@ -7,10 +7,16 @@ The following is a summary glossing over how to use the JavaScript array prototy
 
 ```JavaScript
 Ex.
-Input: let nums = [0, 1 , 2, 3, 10, 20, 30];
+Input:
+let nums = [0, 1 , 2, 3, 10, 20, 30];
+
 numbers.sort();
+
 console.log(numbers);
-Output: [0, 1, 10, 2, 20, 3, 30]
+
+
+Output:
+[0, 1, 10, 2, 20, 3, 30]
 ```
 
 <br/>
@@ -21,7 +27,8 @@ As we can observe in this example, the `sort()` method reorders `10` before `2` 
 
 ```JavaScript
 Ex.
-Correct syntax for the sort() method: array.sort(compareFunction);
+Correct syntax for the
+sort() method: array.sort(compareFunction);
 ```
 
 <br/>
@@ -32,7 +39,8 @@ Without including the compare function, the `sort()` method will place the eleme
 
 ```JavaScript
 Ex.
-Correct syntax for the compare() function: function compare(a,b) {}
+Correct syntax for the
+compare() function: function compare(a,b) {}
 ```
 
 <br/>
@@ -46,14 +54,22 @@ In the above example, `a` and `b` are the two arguments accepted by the `compare
 
 ```JavaScript
 Ex.
-Input: let numbers = [0, 1, 2, 3, 10, 20, 30];
+Input:
+let numbers = [0, 1, 2, 3, 10, 20, 30];
+
 numbers.sort((a, b) => {
-    if(a > b) return 1;
-    if(a < b) return -1;
-    return 0;
+    if (a > b) return 1;
+
+    if (a < b) return -1;
+
+    return 0;       
 });
+
 console.log(numbers);
-Output: [0, 1, 2, 3, 10, 20, 30]
+
+
+Output:
+[0, 1, 2, 3, 10, 20, 30]
 ```
 
 <br/>
@@ -64,10 +80,16 @@ To simplify things further, the `sort()` method with a `compare()` function can 
 
 ```JavaScript
 Ex.
-Input: let numbers = [0, 1, 2, 3, 10, 20, 30];
+Input:
+let numbers = [0, 1, 2, 3, 10, 20, 30];
+
 numbers.sort((a, b) => a - b);
+
 console.log(numbers);
-Output: [0, 1, 2, 3, 10, 20, 30]
+
+
+Output:
+[0, 1, 2, 3, 10, 20, 30]
 ```
 
 <br/>
@@ -78,7 +100,11 @@ Output: [0, 1, 2, 3, 10, 20, 30]
 
 ```JavaScript
 Ex.
-let animals = ['cat', 'dog', 'elephant', 'bee', 'ant'];
+let animals = ['cat',
+               'dog',
+               'elephant',
+               'bee',
+               'ant'];
 ```
 
 <br/>
@@ -89,10 +115,24 @@ The default behavior of the `sort()` method can be used to arrange the elements 
 
 ```JavaScript
 Ex.
-Input: let animals = ['cat', 'dog', 'elephant', 'bee', 'ant'];
+Input:
+let animals = ['cat',
+               'dog',
+               'elephant',
+               'bee',
+               'ant'];
+
 animals.sort();
+
 console.log(animals);
-Output: ['ant', 'bee', 'cat', 'dog', 'elephant']
+
+
+Output: 
+['ant',
+ 'bee',
+ 'cat',
+ 'dog',
+ 'elephant']
 ```
 
 <br/>
@@ -103,14 +143,30 @@ This array is also able to be arranged in descending alphabetical order by confi
 
 ```JavaScript
 Ex.
-Input: let animals = ['cat', 'dog', 'elephant', 'bee', 'ant'];
+Input:
+let animals = ['cat',
+               'dog',
+               'elephant',
+               'bee',
+               'ant'];
+
 animals.sort((a, b) => {
-    if(a > b) return -1;
-    if(a < b) return 1;
+    if (a > b) return -1;
+
+    if (a < b) return 1;
+
     return 0;
 });
+
 console.log(animals);
-Output: ['elephant', 'dog', 'cat', 'bee', 'ant']
+
+
+Output:
+['elephant',
+ 'dog',
+ 'cat',
+ 'bee',
+ 'ant']
 ```
 
 <br/>
@@ -121,13 +177,27 @@ We can also modify arguments passed to the `compare()` function in order to sort
 
 ```JavaScript
 Ex.
-Input: let mixedCaseAnimals = ['Cat', 'dog', 'Elephant', 'bee', 'ant'];
+Input:
+let mixedCaseAnimals = ['Cat',
+                        'dog',
+                        'Elephant',
+                        'bee',
+                        'ant'];
+
 mixedCaseAnimals.sort((a, b) => {
     let x = a.toUpperCase(),
         y = b.toUpperCase();
+
     return x == y ? 0 : x > y ? 1 : -1;
 });
-Output: ['ant', 'bee', 'Cat', 'dog', 'Elephant']
+
+
+Output:
+['ant',
+ 'bee',
+ 'Cat',
+ 'dog',
+ 'Elephant']
 ```
 
 <br/>
@@ -142,8 +212,13 @@ Strings that contain non-ASCII characters (é, è, etc...) are not able to be re
 
 ```JavaScript
 Ex.
-Input: let animaux = ['zèbre', 'abeille', 'écureuil', 'chat'];
+let animaux = ['zèbre',
+               'abeille',
+               'écureuil',
+               'chat'];
+
 animaux.sort();
+
 console.log(animaux);
 ```
 
@@ -155,11 +230,19 @@ In the above example of an array of French animal species names, the `zébre` st
 
 ```JavaScript
 Ex.
-Input: animaux.sort((a, b) => {
+Input:
+animaux.sort((a, b) => {
     return a.localeCompare(b);
 });
+
 console.log(animaux);
-Output: ['abeille', 'chat', 'écureuil', 'zèbre']
+
+
+Output:
+['abeille',
+ 'chat',
+ 'écureuil',
+ 'zèbre']
 ```
 
 <br/>
@@ -181,10 +264,16 @@ A custom `compare()` function can be used to govern the way the `sort()` method 
 
 ```JavaScript
 Ex.
+Input:
 let scores = [9, 80, 10, 20, 5, 70];
+
 scores.sort((a, b) => a - b);
+
 console.log(scores);
-Output: [5, 9, 10, 20, 70, 80]
+
+
+Output:
+[5, 9, 10, 20, 70, 80]
 ```
 
 <br/>
@@ -195,10 +284,16 @@ If we reverse the logic in the `compare()` function of the above example, we are
 
 ```JavaScript
 Ex.
+Input:
 let scores = [9, 80, 10, 20, 5, 70];
+
 scores.sort((a, b) => b - a);
+
 console.log(scores);
-Output: [80, 70, 20, 10, 9, 5]
+
+
+Output:
+[80, 70, 20, 10, 9, 5]
 ```
 
 <br/>
@@ -210,9 +305,15 @@ Output: [80, 70, 20, 10, 9, 5]
 ```JavaScript
 Ex.
 let employees = [
-    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
-    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
-    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
+    {name: 'Josie',
+     salary: 90000,
+     hireDate: 'August 27, 2023'},
+    {name: 'Olivia',
+     salary: 75000,
+     hireDate: 'December 13, 2022'},
+    {name: 'Britney',
+     salary: 80000,
+     hireDate: 'January 1, 2024'},
 ];
 ```
 
@@ -230,15 +331,25 @@ The employee objects can be sorted in ascending order based on their numeric `sa
 
 ```JavaScript
 Ex.
-Input: employees.sort((x, y) => {
+Input:
+employees.sort((x, y) => {
     return x.salary - y.salary;
 });
+
 console.table(employees);
+
+
 Output: [
-    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
-    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
-    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
-];
+    {name: 'Olivia',
+     salary: 75000,
+     hireDate: 'December 13, 2022'},
+    {name: 'Britney',
+     salary: 80000,
+     hireDate: 'January 1, 2024'},
+    {name: 'Josie',
+     salary: 90000,
+     hireDate: 'August 27, 2023'},
+]
 ```
 
 <br/>
@@ -255,17 +366,28 @@ When sorting the `employee` objects by the string `name` property, we can deploy
 
 ```JavaScript
 Ex.
-Input: employees.sort((x, y) => {
+Input:
+employees.sort((x, y) => {
     let a = x.name.toUpperCase(),
         b = y.name.toUpperCase();
+
     return a == b ? 0 : a > b ? 1 : -1;
 });
+
 console.table(employees);
+
+
 Output: [
-    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
-    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
-    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
-];
+    {name: 'Britney',
+     salary: 80000,
+     hireDate: 'January 1, 2024'},
+    {name: 'Olivia',
+     salary: 75000,
+     hireDate: 'December 13, 2022'},
+    {name: 'Josie',
+     salary: 90000,
+     hireDate: 'August 27, 2023'},
+]
 ```
 
 <br/>
@@ -278,17 +400,28 @@ To sort the `employee` objects by their individual hire dates, we must first con
 
 ```JavaScript
 Ex.
-Input: employees.sort((x, y) => {
+Input:
+employees.sort((x, y) => {
     let a = new Date(x.hireDate),
         b = new Date(y.hireDate);
+
     return a - b;
 });
+
 console.table(employees);
+
+
 Output: [
-    {name: 'Olivia', salary: 75000, hireDate: 'December 13, 2022'},
-    {name: 'Josie', salary: 90000, hireDate: 'August 27, 2023'},
-    {name: 'Britney', salary: 80000, hireDate: 'January 1, 2024'},
-];
+    {name: 'Olivia',
+     salary: 75000,
+     hireDate: 'December 13, 2022'},
+    {name: 'Josie',
+     salary: 90000,
+     hireDate: 'August 27, 2023'},
+    {name: 'Britney',
+     salary: 80000,
+     hireDate: 'January 1, 2024'},
+]
 ```
 
 <br/>
@@ -303,11 +436,20 @@ It's important to keep in mind that the `compare()` function is called numerous 
 
 ```JavaScript
 Ex.
-Input: let rivers = ['Nile', 'Amazon', 'Congo', 'Mississippi', 'Rio-Grande'];
+Input:
+let rivers = ['Nile', 
+              'Amazon', 
+              'Congo', 
+              'Mississippi', 
+              'Rio-Grande'];
+
 rivers.sort((a, b) => {
     console.log(a, b);
+
     return a.length - b.length;
 });
+
+
 Output:
 Amazon Nile
 Congo Amazon
@@ -341,7 +483,8 @@ Implementation of this technique is accomplished by using the `map()` method to 
 ```JavaScript
 Ex.
 lengths.sort((a, b) => {
-    return +(a.value > b.value) || +(a.value === b.value) - 1;
+    return +(a.value > b.value) || 
+           +(a.value === b.value) - 1;
 });
 ```
 
@@ -353,11 +496,19 @@ The elements of the resulting `lengths` array are then sorted and used to build 
 
 ```JavaScript
 Ex.
+Input:
 const sortedRivers = lengths.map((e) => {
     return rivers[e.index];
 });
+
 console.log(sortedRivers);
-Output: ['Nile', 'Congo', 'Amazon', 'Rio-Grande', 'Mississippi']
+
+
+Output: ['Nile',
+         'Congo',
+         'Amazon',
+         'Rio-Grande',
+         'Mississippi']
 ```
 
 <br/>
