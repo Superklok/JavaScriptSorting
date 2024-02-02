@@ -11,8 +11,8 @@ Given an integer array `nums` of `2n` integers, group these integers into `n` pa
 ```JavaScript
 Input: nums = [1,4,3,2]
 Output: 4
-Explanation: 
-All possible pairings (ignoring the ordering of elements) are:
+Explanation: All possible pairings
+(ignoring the ordering of elements) are:
 1. (1, 4), (2, 3) -> min(1, 4) + min(2, 3) = 1 + 2 = 3
 2. (1, 3), (2, 4) -> min(1, 3) + min(2, 4) = 1 + 2 = 3
 3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 + 3 = 4
@@ -64,7 +64,7 @@ const arrayPairSum = (nums) => {
 I've defined a function called `arrayPairSum` that takes an array of numbers, `nums`, as input. The purpose of this function is to calculate the sum of the minimum of each pair of numbers in the array and return the total sum.
 <br/>
 
-Inside the function, a variable called `result` is initialized to 0. This variable will store the sum of the minimum of each pair.
+Inside the function, a variable called `result` is initialized to `0`. This variable will store the sum of the minimum of each pair.
 <br/>
 
 The input array `nums` is sorted in ascending order using the `sort` method and a compare function. This ensures that the smaller numbers come before the larger numbers in the array.

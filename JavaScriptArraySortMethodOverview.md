@@ -27,8 +27,8 @@ As we can observe in this example, the `sort()` method reorders `10` before `2` 
 
 ```JavaScript
 Ex.
-Correct syntax for the
-sort() method: array.sort(compareFunction);
+Correct syntax for the sort() method:
+array.sort(compareFunction);
 ```
 
 <br/>
@@ -39,8 +39,8 @@ Without including the compare function, the `sort()` method will place the eleme
 
 ```JavaScript
 Ex.
-Correct syntax for the
-compare() function: function compare(a,b) {}
+Correct syntax for the compare() function:
+function compare(a,b) {}
 ```
 
 <br/>
@@ -49,7 +49,6 @@ In the above example, `a` and `b` are the two arguments accepted by the `compare
 - `compare(a, b) < 0` The sort method will place `a` at the lowest index and `b` will have the greatest index.
 - `compare(a, b) > 0` The sort method will place `b` at the lowest index and `a` will have the greatest index.
 - `compare(a, b) === 0` The sort method determines `a` is equivalent to `b` and their index remains unchanged.
-<br/>
 <br/>
 
 ```JavaScript
